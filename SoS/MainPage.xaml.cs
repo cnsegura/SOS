@@ -15,13 +15,13 @@ namespace SoS
     public sealed partial class MainPage : Page
     {
 
-        private const int LED_PIN = 5;
+        private const int LED_PIN = 12;
 
         private GpioPin pin;
         private GpioPinValue pinValue;
         private SolidColorBrush redBrush = new SolidColorBrush(Windows.UI.Colors.Red);
         private SolidColorBrush grayBrush = new SolidColorBrush(Windows.UI.Colors.LightGray);
-        private int dotPeriod = 1;
+        private int dotPeriod = 500;
         public MainPage()
         {
             this.InitializeComponent();
